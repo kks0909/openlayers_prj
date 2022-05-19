@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Draw Features</title>
+  <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+  <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+  <!-- The lines below are only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,TextDecoder"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.3/minified.js"></script>
+  <link rel="stylesheet" href="draw_features.css">
+</head>
+<body>
+<div id="map" class="map"></div>
+<form class="form-inline">
+  <label for="type">Geometry type: &nbsp;</label>
+  <select class="form-control mr-2 mb-2 mt-2" id="type">
+    <option value="Point">Point</option>
+<!--    <option value="LineString">LineString</option>-->
+<!--    <option value="Polygon">Polygon</option>-->
+<!--    <option value="Circle">Circle</option>-->
+<!--    <option value="None">None</option>-->
+  </select>
+  <input class="form-control mr-2 mb-2 mt-2" type="button" value="Undo" id="undo">
+</form>
+
+<div id="description">
+  Немного переделанный пример: <a href="https://openlayers.org/en/latest/examples/draw-features.html">Draw Features</a><br>
+  Позволяет получить значения точек просто тыкая на карту.<br>
+  Координаты в консоли.
+</div>
+<script type="module" src="/draw_features.js"></script>
+</body>
+</html>

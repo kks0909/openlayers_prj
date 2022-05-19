@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+  <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+  <!-- The lines below are only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,TextDecoder"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.3/minified.js"></script>
+
+  <link rel="stylesheet" href="node_modules/ol-layerswitcher/dist/ol-layerswitcher.css" />
+  <link rel="stylesheet" href="index.css" />
+  <title>OpenLayers example</title>
+
+</head>
+<body>
+  <div id="map" class="map"></div>
+  <script type="module" src="/export.js"></script>
+  <script type="module" src="/main.js"></script>
+
+  <div id="description">
+    Для относительно удобного получения координат точек использовался <a href="draw_features.html">данный интерфейс</a>.
+  </div>
+
+
+  <button id="btn_download">Download</button>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+html, body, .map {
+    min-height: 95% !important;
+    height: 95%;
+    /*width: 100%;*/
+}
+
+#btn_download {
+    position: fixed;
+    width: 100px;
+    bottom: 5%;
+    right: 5%;
+}
+
+#description {
+    position: fixed;
+    text-align: left;
+    width: 300px;
+    bottom: 3%;
+    left: 3%;
+}
+
